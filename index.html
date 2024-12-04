@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>广告代码解析器</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f2f5;
+        }
+        .header {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .stats {
+            display: flex;
+            gap: 20px;
+            margin-top: 15px;
+        }
+        .stat-card {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 6px;
+            flex: 1;
+            text-align: center;
+            border: 1px solid #e9ecef;
+        }
+        .stat-number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin: 5px 0;
+        }
+        .stat-label {
+            color: #6c757d;
+            font-size: 14px;
+        }
+        .input-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+        textarea {
+            width: 100%;
+            height: 200px;
+            margin-bottom: 15px;
+            padding: 15px;
+            border: 1px solid #ced4da;
+            border-radius: 6px;
+            font-family: monospace;
+            resize: vertical;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 12px 24px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background-color: #45a049;
+            transform: translateY(-1px);
+        }
+        .result {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .ad-unit {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .ad-unit h3 {
+            margin-top: 0;
+            color: #2c3e50;
+            font-size: 18px;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 10px;
+        }
+        .ad-unit pre {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+            font-size: 14px;
+            margin: 15px 0;
+        }
+        .copy-btn {
+            background-color: #0d6efd;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .copy-btn:hover {
+            background-color: #0b5ed7;
+        }
+        .dimension-tag {
+            display: inline-block;
+            background: #e9ecef;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            color: #495057;
+            margin-left: 10px;
+        }
+        .validation-error {
+            color: #dc3545;
+            font-size: 14px;
+            margin-top: 5px;
+            padding: 8px;
+            background: #fff5f5;
+            border-radius: 4px;
+            border-left: 3px solid #dc3545;
+        }
+        
+        .validation-success {
+            color: #28a745;
+            font-size: 14px;
+            margin-top: 5px;
+            padding: 8px;
+            background: #f8fff8;
+            border-radius: 4px;
+            border-left: 3px solid #28a745;
+        }
+
+        .stat-card.error-stat {
+            border-left: 3px solid #dc3545;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>广告代码解析器</h1>
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-number" id="totalAds">0</div>
+                <div class="stat-label">广告总数</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="uniqueSizes">0</div>
+                <div class="stat-label">不同尺寸</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="totalDomains">0</div>
+                <div class="stat-label">域名数量</div>
+            </div>
+            <div class="stat-card error-stat">
+                <div class="stat-number" id="errorCount">0</div>
+                <div class="stat-label">错误数量</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="input-container">
+        <textarea id="inputCode" placeholder="请粘贴广告代码..."></textarea>
+        <button onclick="parseCode()">解析代码</button>
+    </div>
+    <div id="result" class="result"></div>
+
+    <script>
+        function extractDimensions(code) {
+            const sizeMatch = code.match(/\[(\d+),\s*(\d+)\]/);
+            if (sizeMatch) {
+                return `${sizeMatch[1]}x${sizeMatch[2]}`;
+            }
+            return 'fluid';
+        }
+
+        function extractDomain(code) {
+            const domainMatch = code.match(/\/\/([^/]+)/);
+            return domainMatch ? domainMatch[1] : '';
+        }
+
+        function updateStats(adUnits) {
+            const sizes = new Set();
+            const domains = new Set();
+            
+            adUnits.forEach(unit => {
+                if (unit.trim()) {
+                    sizes.add(extractDimensions(unit));
+                    domains.add(extractDomain(unit));
+                }
+            });
+
+            document.getElementById('totalAds').textContent = adUnits.filter(unit => unit.trim()).length;
+            document.getElementById('uniqueSizes').textContent = sizes.size;
+            document.getElementById('totalDomains').textContent = domains.size;
+        }
+
+        function validateAdUnit(code) {
+            const errors = [];
+            
+            // 检查字符串字面量是否正确闭合
+            const singleQuotes = (code.match(/'/g) || []).length;
+            const doubleQuotes = (code.match(/"/g) || []).length;
+            
+            if (singleQuotes % 2 !== 0) {
+                errors.push('存在未闭合的单引号');
+            }
+            if (doubleQuotes % 2 !== 0) {
+                errors.push('存在未闭合的双引号');
+            }
+
+            // 检查script标签中的字符串
+            const scriptContents = code.match(/<script[^>]*>([\s\S]*?)<\/script>/g) || [];
+            scriptContents.forEach(script => {
+                const content = script.replace(/<\/?script[^>]*>/g, '');
+                try {
+                    // 尝试解析JavaScript代码
+                    new Function(content);
+                } catch (e) {
+                    errors.push('JavaScript语法错误: ' + e.message);
+                }
+            });
+
+            // 修复引号问题的验证逻辑
+            const gptScript = '<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"><\/script>';
+            if (!code.includes(gptScript)) {
+                errors.push('缺少 GPT 脚本引用');
+            }
+
+            const googletag = 'window.googletag = window.googletag || {cmd: []};';
+            if (!code.includes(googletag)) {
+                errors.push('缺少 googletag 初始化');
+            }
+
+            if (!code.includes('googletag.defineSlot(')) {
+                errors.push('缺少广告位定义');
+            }
+
+            if (!code.includes('googletag.enableServices();')) {
+                errors.push('缺少 enableServices 调用');
+            }
+
+            if (!code.includes('googletag.display(')) {
+                errors.push('缺少 display 调用');
+            }
+
+            if (!code.includes('<div id=\'div-gpt-ad-')) {
+                errors.push('缺少广告容器 div');
+            }
+
+            const scriptTags = (code.match(/<script/g) || []).length;
+            const scriptCloseTags = (code.match(/<\/script>/g) || []).length;
+            if (scriptTags !== scriptCloseTags) {
+                errors.push('script 标签未正确闭合');
+            }
+
+            const sizePattern = /\[\d+,\s*\d+\]/;
+            if (!sizePattern.test(code) && !code.includes('fluid')) {
+                errors.push('广告尺寸格式不正确');
+            }
+
+            return errors;
+        }
+
+        function parseCode() {
+            const input = document.getElementById('inputCode').value;
+            const result = document.getElementById('result');
+            result.innerHTML = '';
+
+            const adUnits = input.split('\n\n');
+            updateStats(adUnits);
+
+            let totalErrors = 0;
+
+            adUnits.forEach((unit, index) => {
+                if (unit.trim()) {
+                    const lines = unit.trim().split('\n');
+                    const title = lines[0].trim();
+                    
+                    if (title && !title.startsWith('<')) {
+                        const div = document.createElement('div');
+                        div.className = 'ad-unit';
+                        
+                        const header = document.createElement('h3');
+                        const dimensions = extractDimensions(unit);
+                        header.textContent = title;
+                        if (dimensions) {
+                            const dimensionSpan = document.createElement('span');
+                            dimensionSpan.className = 'dimension-tag';
+                            dimensionSpan.textContent = dimensions;
+                            header.appendChild(dimensionSpan);
+                        }
+                        
+                        const code = document.createElement('pre');
+                        code.textContent = unit;
+                        
+                        const errors = validateAdUnit(unit);
+                        totalErrors += errors.length;
+                        
+                        if (errors.length > 0) {
+                            const errorDiv = document.createElement('div');
+                            errorDiv.className = 'validation-error';
+                            errorDiv.innerHTML = '<strong>发现以下问题：</strong><br>' + 
+                                errors.map(err => `• ${err}`).join('<br>');
+                            div.appendChild(errorDiv);
+                        } else {
+                            const successDiv = document.createElement('div');
+                            successDiv.className = 'validation-success';
+                            successDiv.innerHTML = '<svg viewBox="0 0 24 24" width="16" height="16" style="display: inline-block; vertical-align: middle; margin-right: 4px;"><path fill="currentColor" d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"></path></svg>代码格式正确';
+                            div.appendChild(successDiv);
+                        }
+                        
+                        const titleStyle = document.createElement('style');
+                        titleStyle.textContent = `
+                            .dimension-tag {
+                                margin-left: 8px;
+                                border-left: 1px solid #ddd;
+                                padding-left: 8px;
+                            }
+                        `;
+                        document.head.appendChild(titleStyle);
+
+                        const copyBtn = document.createElement('button');
+                        copyBtn.textContent = '复制代码';
+                        copyBtn.className = 'copy-btn';
+                        copyBtn.onclick = () => {
+                            navigator.clipboard.writeText(unit)
+                                .then(() => {
+                                    copyBtn.textContent = '已复制！';
+                                    setTimeout(() => {
+                                        copyBtn.textContent = '复制代码';
+                                    }, 2000);
+                                })
+                                .catch(err => console.error('复制失败：', err));
+                        };
+
+                        div.appendChild(header);
+                        div.appendChild(code);
+                        div.appendChild(copyBtn);
+                        result.appendChild(div);
+                    }
+                }
+            });
+
+            document.getElementById('errorCount').textContent = totalErrors;
+        }
+    </script>
+</body>
+</html>

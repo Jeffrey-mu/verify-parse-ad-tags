@@ -1,0 +1,323 @@
+domain.com_1203_750x300
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/xxxxxxxxxx,xxxxxxxxxx/domain.com_1203_750x300', ['fluid', [750, 300]], 'div-gpt-ad-1733216914811-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+</script>
+<!-- /xxxxxxxxxx,xxxxxxxxxx/domain.com_1203_750x300 -->
+<div id='div-gpt-ad-1733216914811-0' style='min-width: 750px; min-height: 300px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1733216914811-0'); });
+  </script>
+</div>
+
+domain.com_1203_320x50_2.1
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/xxxxxxxxxx,xxxxxxxxxx/domain.com_1203_320x50_2.1', [320, 50], 'div-gpt-ad-1733216900922-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+</script>
+<!-- /xxxxxxxxxx,xxxxxxxxxx/domain.com_1203_320x50_2.1 -->
+<div id='div-gpt-ad-1733216900922-0' style='min-width: 320px; min-height: 50px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1733216900922-0'); });
+  </script>
+</div>
+
+domain.com_1203_320x50_1.1
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/xxxxxxxxxx,xxxxxxxxxx/domain.com_1203_320x50_1.1', [320, 50], 'div-gpt-ad-1733216887620-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+</script>
+<!-- /xxxxxxxxxx,xxxxxxxxxx/domain.com_1203_320x50_1.1 -->
+<div id='div-gpt-ad-1733216887620-0' style='min-width: 320px; min-height: 50px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1733216887620-0'); });
+  </script>
+</div>
+
+domain.com_1203_320x50
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/xxxxxxxxxx,xxxxxxxxxx/domain.com_1203_320x50', [320, 50], 'div-gpt-ad-1733216871904-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+</script>
+<!-- /xxxxxxxxxx,xxxxxxxxxx/domain.com_1203_320x50 -->
+<div id='div-gpt-ad-1733216871904-0' style='min-width: 320px; min-height: 50px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1733216871904-0'); });
+  </script>
+</div>
+
+domain.com_1203_320x480_04
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/xxxxxxxxxx,xxxxxxxxxx/domain.com_1203_320x480_04', [320, 480], 'div-gpt-ad-1733216855139-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+</script>
+<!-- /xxxxxxxxxx,xxxxxxxxxx/domain.com_1203_320x480_04 -->
+<div id='div-gpt-ad-1733216855139-0' style='min-width: 320px; min-height: 480px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1733216855139-0'); });
+  </script>
+</div>
+
+domain.com_1203_320x480_03
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/xxxxxxxxxx,xxxxxxxxxx/domain.com_1203_320x480_03', [320, 480], 'div-gpt-ad-1733216839007-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+</script>
+<!-- /xxxxxxxxxx,xxxxxxxxxx/domain.com_1203_320x480_03 -->
+<div id='div-gpt-ad-1733216839007-0' style='min-width: 320px; min-height: 480px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1733216839007-0'); });
+  </script>
+</div>
+
+domain.com_1203_320x480_01
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/xxxxxxxxxx,xxxxxxxxxx/domain.com_1203_320x480_01', [320, 480], 'div-gpt-ad-1733216823082-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+</script>
+<!-- /xxxxxxxxxx,xxxxxxxxxx/domain.com_1203_320x480_01 -->
+<div id='div-gpt-ad-1733216823082-0' style='min-width: 320px; min-height: 480px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1733216823082-0'); });
+  </script>
+</div>
+
+domain.com_1203_320x100_1
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/xxxxxxxxxx,xxxxxxxxxx/domain.com_1203_320x100_1', [[320, 100], 'fluid'], 'div-gpt-ad-1733216805472-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+</script>
+<!-- /xxxxxxxxxx,xxxxxxxxxx/domain.com_1203_320x100_1 -->
+<div id='div-gpt-ad-1733216805472-0' style='min-width: 320px; min-height: 100px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1733216805472-0'); });
+  </script>
+</div>
+
+domain.com_1203_300x250_02
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/xxxxxxxxxx,xxxxxxxxxx/domain.com_1203_300x250_02', [300, 250], 'div-gpt-ad-1733216791911-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+</script>
+<!-- /xxxxxxxxxx,xxxxxxxxxx/domain.com_1203_300x250_02 -->
+<div id='div-gpt-ad-1733216791911-0' style='min-width: 300px; min-height: 250px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1733216791911-0'); });
+  </script>
+</div>
+
+domain.com_1203_300x250_01
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/xxxxxxxxxx,xxxxxxxxxx/domain.com_1203_300x250_01', [300, 250], 'div-gpt-ad-1733216774022-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+</script>
+<!-- /xxxxxxxxxx,xxxxxxxxxx/domain.com_1203_300x250_01 -->
+<div id='div-gpt-ad-1733216774022-0' style='min-width: 300px; min-height: 250px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1733216774022-0'); });
+  </script>
+</div>
+
+domain.com_1203_160x600
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/xxxxxxxxxx,xxxxxxxxxx/domain.com_1203_160x600', [160, 600], 'div-gpt-ad-1733216760851-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+</script>
+<!-- /xxxxxxxxxx,xxxxxxxxxx/domain.com_1203_160x600 -->
+<div id='div-gpt-ad-1733216760851-0' style='min-width: 160px; min-height: 600px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1733216760851-0'); });
+  </script>
+</div>
+
+domain.com_1203_160*600_02
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/xxxxxxxxxx,xxxxxxxxxx/domain.com_1203_160*600_02', [160, 600], 'div-gpt-ad-1733216746703-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+</script>
+<!-- /xxxxxxxxxx,xxxxxxxxxx/domain.com_1203_160*600_02 -->
+<div id='div-gpt-ad-1733216746703-0' style='min-width: 160px; min-height: 600px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1733216746703-0'); });
+  </script>
+</div>
+
+domain.com_1203_160*600_01
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/xxxxxxxxxx,xxxxxxxxxx/domain.com_1203_160*600_01', [160, 600], 'div-gpt-ad-1733216733235-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+</script>
+<!-- /xxxxxxxxxx,xxxxxxxxxx/domain.com_1203_160*600_01 -->
+<div id='div-gpt-ad-1733216733235-0' style='min-width: 160px; min-height: 600px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1733216733235-0'); });
+  </script>
+</div>
+
+domain.com_1119_300x250
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/xxxxxxxxxx,xxxxxxxxxx/domain.com_1119_300x250', [300, 250], 'div-gpt-ad-1733216717887-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+</script>
+<!-- /xxxxxxxxxx,xxxxxxxxxx/domain.com_1119_300x250 -->
+<div id='div-gpt-ad-1733216717887-0' style='min-width: 300px; min-height: 250px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1733216717887-0'); });
+  </script>
+</div>
+
+game.domain.com_1203_750*300
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/xxxxxxxxxx,xxxxxxxxxx/game.domain.com_1203_750*300', ['fluid', [750, 300]], 'div-gpt-ad-1733216702668-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+</script>
+<!-- /xxxxxxxxxx,xxxxxxxxxx/game.domain.com_1203_750*300 -->
+<div id='div-gpt-ad-1733216702668-0' style='min-width: 750px; min-height: 300px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1733216702668-0'); });
+  </script>
+</div>
+
+game.domain.com_1203_320x50
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/xxxxxxxxxx,xxxxxxxxxx/game.domain.com_1203_320x50', [320, 50], 'div-gpt-ad-1733216688778-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+</script>
+<!-- /xxxxxxxxxx,xxxxxxxxxx/game.domain.com_1203_320x50 -->
+<div id='div-gpt-ad-1733216688778-0' style='min-width: 320px; min-height: 50px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1733216688778-0'); });
+  </script>
+</div>
+
+game.domain.com_1203_160*600_02
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/xxxxxxxxxx,xxxxxxxxxx/game.domain.com_1203_160*600_02', [160, 600], 'div-gpt-ad-1733216671615-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+</script>
+<!-- /xxxxxxxxxx,xxxxxxxxxx/game.domain.com_1203_160*600_02 -->
+<div id='div-gpt-ad-1733216671615-0' style='min-width: 160px; min-height: 600px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1733216671615-0'); });
+  </script>
+</div>
+
+game.domain.com_1203_160*600_01
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/xxxxxxxxxx,xxxxxxxxxx/game.domain.com_1203_160*600_01', [160, 600], 'div-gpt-ad-1733216652232-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+</script>
+<!-- /xxxxxxxxxx,xxxxxxxxxx/game.domain.com_1203_160*600_01 -->
+<div id='div-gpt-ad-1733216652232-0' style='min-width: 160px; min-height: 600px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1733216652232-0'); });
+  </script>
+</div>
